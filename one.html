@@ -6,7 +6,10 @@
     <script src="https://unpkg.com/vue@3"></script>
   </head>
   <body>
-    <div id="app">{{ greeting }}</div>
+    <div id="app">
+      <input v-model="greeting" /><br />
+      {{ greeting }} {{greeting.length}}
+    </div>
     <script>
       Vue.createApp({
         data() {
